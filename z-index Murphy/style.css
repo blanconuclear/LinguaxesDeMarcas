@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cccccc;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.cabeceira {
+  background-color: #ffd480;
+  text-align: center;
+  height: 100px;
+  border: solid #eeba52;
+  margin: 0 90px;
+  padding-top: 10px;
+}
+
+.esquerdaUp,
+.esquerdaDonw,
+.dereitaUp,
+.dereitaDonw,
+.centro {
+  width: 40%;
+  height: 30%;
+  margin: 0 30px;
+}
+
+.esquerdaUp {
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  background-color: #ffff80;
+  border: 3px solid #d9d940;
+}
+
+.esquerdaUp:hover {
+  z-index: 2;
+}
+
+.esquerdaDonw {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  background-color: #ffe6ff;
+  margin-top: 200px;
+  border: 3px solid #eb91eb;
+}
+
+.esquerdaDonw:hover {
+  z-index: 2;
+}
+
+.dereitaUp {
+  position: absolute;
+  top: 240px;
+  right: 20px;
+  background-color: #ccffff;
+  border: 3px solid #70f3f3;
+}
+
+.dereitaUp:hover {
+  z-index: 2;
+}
+
+.dereitaDonw {
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+  background-color: #ffb3b3;
+  border: 3px solid #f88686;
+}
+
+.dereitaDonw:hover {
+  z-index: 2;
+}
+
+.centro {
+  position: absolute;
+  top: 43%;
+  left: 30%;
+  z-index: 1;
+  background-color: #80ff80;
+  border: 3px solid #4aa74a;
+}
