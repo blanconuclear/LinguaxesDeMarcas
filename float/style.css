@@ -1,0 +1,36 @@
+.d p {
+  width: 10em;
+  height: 10em;
+  margin: 3px;
+  padding: 3px;
+  border: black solid;
+  float: right;
+}
+
+.e p {
+  width: 10em;
+  height: 10em;
+  margin: 3px;
+  padding: 3px;
+  border: red solid;
+  float: left;
+}
+
+.non p {
+  clear: both;
+  width: 99.5%;
+  height: 10%;
+  background-color: violet;
+}
+
+.esquerda {
+  float: left;
+}
+
+.dereita {
+  float: right;
+}
+
+.centro {
+  margin: 100px 450px 0;
+}

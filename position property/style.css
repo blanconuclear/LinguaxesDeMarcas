@@ -1,0 +1,22 @@
+.caixa {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  position: static;
+  display: inline-block;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border: solid black;
+}
+
+.container {
+  max-width: 500px;
+}
+
+.caixa:nth-child(5n) {
+  background-color: red;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
