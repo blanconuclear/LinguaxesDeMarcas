@@ -1,0 +1,34 @@
+.main-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  background-color: black;
+}
+
+.main-links li {
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.dropdown-li {
+  position: relative;
+}
+
+.dropdown {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  background-color: black;
+}
+
+.dropdown-li:hover .dropdown {
+  display: block;
+}
+
+li:hover {
+  background-color: grey;
+}
