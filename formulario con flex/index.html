@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario de Contacto</h1>
+      <form>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="O teu nome" />
+        <label for="apelido">Apelido</label>
+        <input type="text" name="apelido" id="apelido" />
+        <label for="idade">Idade </label>
+        <input type="number" name="idade" id="idade" />
+        <label for="provincias">Provincia</label>
+        <select name="select" id="provincias">
+          <option value="Coruña">Coruña</option>
+          <option value="Lugo" selected>Lugo</option>
+          <option value="Vigo">Vigo</option>
+          <option value="Pontevedra">Pontevedra</option>
+        </select>
+        <button>Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
