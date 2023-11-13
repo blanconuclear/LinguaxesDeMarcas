@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Tipografias -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -20,6 +34,23 @@
         />
         <label for="mail">Email</label>
         <input type="email" name="mail" id="mail" placeholder="Mail" />
+        <label for="cumpleaños">Fecha Nacimiento</label>
+        <input type="date" name="cumpleaños" id="cumpleaños" />
+        <div class="checkbox">
+          <p>Género:</p>
+          <input type="radio" id="hombre" name="hombre" value="hombre" />
+          <label for="hombre">Hombre</label>
+          <input type="radio" id="mujer" name="mujer" value="mujer" />
+          <label for="mujer">Mujer</label>
+        </div>
+        <select name="provincias" id="provincias">
+          <option value="Coruña">A Coruña</option>
+          <option value="Lugo">Lugo</option>
+          <option value="Coruña">Vigo</option>
+          <option value="Coruña">Pontevedra</option>
+        </select>
+        <label for="mensae">Datos complementarios:</label>
+        <textarea name="mensae" id="mensaje" cols="30" rows="4"></textarea>
         <button>Enviar</button>
       </form>
     </div>
