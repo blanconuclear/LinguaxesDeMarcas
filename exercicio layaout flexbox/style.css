@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+}
+
+header {
+  padding: 50px;
+  background-color: rgb(135, 212, 187);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  justify-content: end;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: #312;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1; /* Hace que la fila ocupe todo el espacio restante */
+}
+
+aside {
+  flex: 50px;
+  background-color: beige;
+  padding: 20px;
+}
+
+aside h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+aside form {
+  background-color: rgb(155, 155, 182);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+aside form input {
+  border: none;
+  height: 25px;
+  margin: 10px 0;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 8px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+aside form button {
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+  margin: 10px 40px 0 40px;
+  box-shadow: 8px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+aside form button:hover {
+  background-color: aliceblue;
+}
+
+section {
+  flex: 70%;
+  background-color: 20px;
+  padding: 20px;
+}
+
+.row article {
+  background-color: azure;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 8px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.row article h3 {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  margin-top: auto; /* Coloca el pie de página en la parte inferior de la columna */
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+      }
+
+      aside {
+        flex: 1;
+        background-color: rebeccapurple;
+        display: flex;
+        justify-content: center;
+      }
+
+      aside ul {
+        list-style-type: none;
+      }
+
+      aside a {
+        text-decoration: none;
+        color: black;
+        font-size: 4rem;
+        border-bottom: black solid;
+        margin: 10px;
+      }
+
+      main {
+        flex: 4;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Sobre mi</a></li>
+        </ul>
+      </aside>
+      <main>
+        <h2>main</h2>
+      </main>
+    </div>
+  </body>
+</html>
