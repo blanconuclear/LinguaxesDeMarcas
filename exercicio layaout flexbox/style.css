@@ -59,6 +59,7 @@ aside form {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  box-shadow: 8px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 aside form input {
@@ -91,7 +92,7 @@ section {
 
 .row article {
   background-color: azure;
-  margin: 20px;
+  margin: 35px;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 8px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -101,10 +102,30 @@ section {
   margin-bottom: 10px;
 }
 
+.row article a {
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+  color: rgb(155, 155, 182);
+  font-size: 13px;
+  transition: all 0.4s;
+}
+
+.row article a:hover {
+  color: rgb(114, 114, 182);
+}
+
 footer {
   padding: 20px;
   text-align: center;
   background-color: #333;
   color: white;
   margin-top: auto; /* Coloca el pie de página en la parte inferior de la columna */
+}
+
+audio {
+  width: 100%;
+  outline: none;
+  margin-top: 20px;
 }
