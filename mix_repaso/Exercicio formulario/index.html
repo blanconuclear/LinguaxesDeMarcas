@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="nes-text is-primary">
+    <form class="nes-container with-title is-centered">
+      <div class="row">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" class="nes-input is-success" />
+      </div>
+
+      <div class="row">
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" class="nes-input is-success" />
+      </div>
+      <div class="row">
+        <label for="telephone">Teléfono:</label>
+        <input type="tel" id="telephone" class="nes-input is-success" />
+      </div>
+      <label for="success_select">Provincias</label>
+      <div class="nes-select is-success">
+        <select required id="success_select">
+          <option value="" disabled selected hidden>Select...</option>
+          <option value="0">To be</option>
+          <option value="1">Not to be</option>
+        </select>
+      </div>
+      <label for="textarea_field">Textarea</label>
+      <textarea id="textarea_field" class="nes-textarea"></textarea>
+      <div class="separacion">
+        <button type="button" class="nes-btn is-warning">Warning</button>
+      </div>
+    </form>
+    <div class="footer separacion">
+      <i class="nes-octocat animate"></i>
+      <div class="nes-balloon from-left separacion">
+        <a href="https://github.com/blanconuclear" target="_blank">Mi Github</a>
+      </div>
+    </div>
+  </body>
+</html>
