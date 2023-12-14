@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      nav {
+        background-color: #333;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+      }
+
+      li {
+        position: relative;
+        padding: 15px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #444;
+      }
+
+      li:hover > ul {
+        display: inherit;
+      }
+
+      .row {
+        display: flex;
+        flex: 1;
+      }
+
+      aside {
+        flex: 1;
+        background-color: beige;
+      }
+
+      main {
+        flex: 70%;
+        background-color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li>
+          <a href="#">Servicios</a>
+          <ul>
+            <li><a href="#">Diseño</a></li>
+            <li><a href="#">Desarrollo</a></li>
+            <li><a href="#">Consultoría</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="row">
+      <main>main</main>
+      <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>
