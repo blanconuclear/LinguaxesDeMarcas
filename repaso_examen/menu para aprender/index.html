@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        padding: 50px;
+        background-color: aquamarine;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #333;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+
+      li {
+        padding: 15px;
+        position: relative;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #444;
+      }
+
+      li:hover > ul {
+        display: inherit;
+      }
+
+      li:hover {
+        background-color: #445;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SUBMENU</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="">HOme</a>
+        </li>
+        <li>
+          <a href="">Deportes</a>
+          <ul>
+            <li>
+              <a href="">Pesca</a>
+            </li>
+            <li>
+              <a href="">Caza</a>
+            </li>
+            <li>
+              <a href="">Natación</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+      }
+      #main-menu {
+        background-color: antiquewhite;
+      }
+
+      #main-menu > ul {
+        display: flex;
+      }
+      #main-menu > ul > li {
+        margin: 10px 0;
+      }
+      #main-menu > ul > li > a {
+        padding: 10px 20px;
+      }
+      #main-menu > ul > li > a:hover {
+        background-color: aqua;
+      }
+
+      #main-menu > ul > li > ul {
+        position: absolute;
+        margin-top: 10px;
+        display: none;
+      }
+
+      #main-menu > ul > li > ul > li > a {
+        background-color: red;
+        display: block;
+        padding: 15px;
+      }
+      #main-menu > ul > li > ul > li > a:hover {
+        background-color: green;
+      }
+
+      #main-menu > ul > li:hover > ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="main-menu">
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Noticias</a>
+          <ul>
+            <li>
+              <a href="">Desarrollo web</a>
+            </li>
+            <li>
+              <a href="">Desarrollo web</a>
+            </li>
+            <li>
+              <a href="">Desarrollo web</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Sobre mi</a>
+        </li>
+        <li>
+          <a href="">lenguajes</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
