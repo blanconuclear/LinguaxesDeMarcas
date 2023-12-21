@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efrén Corzón</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulario de Contacto</h1>
+    <form>
+      <label for="usuario">Usuario:</label>
+      <input type="text" name="usuario" id="usuario" placeholder="Nome" />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+
+      <label for="edad">Edad: </label>
+      <input type="number" name="edad" id="edad" />
+
+      <div class="container-genero">
+        <label for="masculino">Masculino:</label>
+        <input type="radio" name="masculino" id="masculino" />
+
+        <label for="femenino">Femenino:</label>
+        <input type="radio" name="femenino" id="femenino" />
+
+        <label for="otro">Otro:</label>
+        <input type="radio" name="otro" id="otro" />
+      </div>
+
+      <div class="container-img">
+        <label for="image">Imagen de perfil: </label>
+        <input type="file" name="image" id="image" />
+      </div>
+
+      <label for="idiomas">idiomas hablados:</label>
+      <select name="idiomas" id="idiomas">
+        <option value="ingles">Inglés</option>
+        <option value="español">Español</option>
+        <option value="frances">Frances</option>
+        <option value="italiano">Italiano</option>
+      </select>
+      <div class="container-linguaxes">
+        <label for="sistemas">Sistemas</label>
+        <input type="checkbox" name="sistemas" id="sistemas" />
+
+        <label for="programacion">programacion</label>
+        <input type="checkbox" name="programacion" id="programacion" />
+
+        <label for="bd">Bd</label>
+        <input type="checkbox" name="bd" id="bd" />
+      </div>
+
+      <label for="comentario-adicional">Comentario adicional</label>
+      <textarea
+        name="comentario-adicional"
+        id="comentario-adicional"
+        cols="20"
+        rows="10"
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

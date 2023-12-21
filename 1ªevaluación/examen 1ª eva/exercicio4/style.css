@@ -1,0 +1,13 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+} */
+
+body {
+  background-image: url(/img/fondo_examen.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}

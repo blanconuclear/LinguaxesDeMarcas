@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: aqua;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 2px;
+}
+
+li {
+  padding: 15px;
+  background-color: green;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  flex: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex: 100%;
+}
+
+a:hover {
+  color: black;
+}
+
+li:hover {
+  background-color: white;
+}
