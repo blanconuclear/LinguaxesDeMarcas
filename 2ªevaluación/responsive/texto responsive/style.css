@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  padding: 50px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  font-family: sans-serif;
+  border-bottom: 1px black solid;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container p {
+  padding: 20px;
+  border: solid black 1px;
+  background-color: #33333304;
+  border-radius: 15px;
+  margin: 30px;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}

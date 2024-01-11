@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-green: #0c9b3b;
+  --primary-grey: #666666;
+}
+
+body {
+  height: 100vh;
+}
+
+.container .verde {
+  color: var(--primary-green);
+}

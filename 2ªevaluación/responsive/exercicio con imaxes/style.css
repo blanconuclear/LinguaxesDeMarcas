@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.small,
+.medium,
+.big {
+  width: 100%;
+}
+
+.big,
+.medium {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .small {
+    display: none;
+  }
+  .medium {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .big {
+    display: block;
+  }
+
+  .medium {
+    display: none;
+  }
+}
