@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap");
+
 :root {
   --primary-green: #0c9b3b;
   --primary-grey: #666666;
@@ -11,8 +13,160 @@
 
 body {
   height: 100vh;
+  font-family: "Righteous", sans-serif;
+}
+
+.container {
+  margin: 50px;
 }
 
 .container .verde {
   color: var(--primary-green);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+nav .menu_item {
+  display: none;
+}
+
+.main_text {
+  background-color: var(--primary-grey);
+  color: white;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+.main_text h3 {
+  font-size: 1.5rem;
+}
+
+.main_text h1 {
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
+.main_text p {
+  margin-bottom: 20px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.images img.hidden {
+  display: none;
+}
+
+.novedades {
+  padding: 20px;
+}
+
+.novedades h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.novedades h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.container h3 {
+  margin-bottom: 20px;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+
+/* RESPOSIVE 576 y 992 */
+
+@media screen and (min-width: 576px) {
+  main {
+    display: flex;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .menu_item {
+    display: inline;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .main_text {
+    width: 1400px;
+  }
+
+  .novedades {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-left: 0;
+  }
+
+  .novedades h2 {
+    padding-right: 30px;
+  }
+
+  .novedades article {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .images img.hidden {
+    display: inline;
+  }
+
+  .main_text {
+    order: 1;
+    width: 60%;
+    padding-right: 20px;
+  }
 }
