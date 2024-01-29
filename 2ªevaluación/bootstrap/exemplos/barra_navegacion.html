@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<!-- Para diseños flexibles:
+	El viewport es el área visible del usuario de una página web. Varía con el dispositivo.
+	HTML5 introdujo a través de la etiqueta <meta> un control del viewport. Proporciona al navegador
+	instrucciones sobre cómo controlar las dimensiones y la escala de la página.
+	width=device-width establece el ancho de la página para adaptarse a la pantalla del dispositivo
+	initial-scale=1 establece la escala inicial de la página cuando se carga por primera vez. Conseguimos que no se haga zoom sobre el documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Ejemplo Bootstrap</title>
+  </head>
+  <body>
+	<!-- Definimos una barra de navegación. Con navbar-expand-sm el menú se expande desde el tamaño sm en adelante y estará en vertical -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">Barra de navegación</a> 
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <!-- enlaces -->
+    <div class="collapse navbar-collapse" id="opciones">   
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Opción 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Opción 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Opción 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Opción 4</a>
+        </li>            
+      </ul>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+  </body>
+</html>

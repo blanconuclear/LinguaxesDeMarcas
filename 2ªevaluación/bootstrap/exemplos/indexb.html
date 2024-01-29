@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<!-- Para diseños flexibles:
+	El viewport es el área visible del usuario de una página web. Varía con el dispositivo.
+	HTML5 introdujo a través de la etiqueta <meta> un control del viewport. Proporciona al navegador
+	instrucciones sobre cómo controlar las dimensiones y la escala de la página.
+	width=device-width establece el ancho de la página para adaptarse a la pantalla del dispositivo
+	initial-scale=1 establece la escala inicial de la página cuando se carga por primera vez. Conseguimos que no se haga zoom sobre el documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Ejemplo Bootstrap</title>
+  </head>
+  <body>
+	<!-- Añadimos un fondo al div para distinguirlo mejor -->
+	<!-- Sitúa todo el contenido en el centro de la página -->
+	<div class="container">
+	<!-- Hace que el contenido siempre ocupe el 100% de la página
+	<div class="container-fluid" style="background-color:#aaa"> -->
+		<!-- contenido de la página -->
+		<div class="row">
+			<div class="col-md-12" style="background-color:rgb(130,167,130)">
+				<h1>Bootstrap, diferentes filas</h1>
+				<p>Esta fila tiene 12 columnas, así que ocupa todo el ancho de la página</p>
+			</div>
+		</div>
+		<div class="row" style="background-color:rgb(149,173,226)">
+			<div class="col-md-9">
+				<h2>Segunda fila, primera columna</h2>
+				<p>La fila está dividida en 2 columnas</p>
+			</div>
+			<div class="col-md-3">
+				<h2>Menú</h2>
+				<ul>
+					<li>Elemento1</li>
+					<li>Elemento2</li>
+					<li>Elemento3</li>
+					<li>Elemento4</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="background-color:rgb(130,167,130)">
+			<div class="col-md-4">
+				<h3>Sección 1</h3>
+				<p>Esto forma parte de la sección 1</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Sección 2</h3>
+				<p>Esto forma parte de la sección 2</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Sección 3</h3>
+				<p>Esto forma parte de la sección 3</p>
+			</div>
+		</div>
+	</div>
+  
+  </body>
+</html>
