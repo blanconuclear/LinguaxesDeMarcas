@@ -4,17 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-}
-
 .logo img {
   width: 200px;
-}
-
-.proba {
-  margin: 0;
-  padding: 0;
 }
 
 svg {
