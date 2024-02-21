@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .grid-container {
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        flex: 1;
+      }
+
+      .grid-container div {
+        background-color: brown;
+        border: solid black 1px;
+      }
+
+      .super-container {
+        display: flex;
+        flex: 1;
+      }
+
+      .super-container h1 {
+        width: 400px;
+        order: 2; /*server para cambiar a orde das cousas*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="super-container">
+      <h1>hola muno</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+        vero quasi, excepturi tenetur, aut veniam fugit tempore dicta possimus
+        accusamus modi culpa, explicabo labore illo deleniti itaque molestias
+        aliquid est.
+      </p>
+      <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+    </div>
+  </body>
+</html>

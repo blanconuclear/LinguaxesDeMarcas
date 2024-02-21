@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: "Righteous", sans-serif;
+      }
+
+      nav {
+        background-color: red;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .grid-fotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      img {
+        width: 400px;
+      }
+
+      h1 {
+        background-color: red;
+        padding: 50px;
+        text-align: center;
+        width: 60%;
+      }
+
+      @media screen and (min-width: 576px) {
+        .container {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .container h1 {
+          background-color: beige;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .container h1 {
+          background-color: aquamarine;
+        }
+
+        .grid-fotos {
+          order: 2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Casa</a>
+      <a href="#">Comedor</a>
+      <a href="#">Dormitorio</a>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="grid-fotos">
+          <img src="img/img1.jpg" /> <img src="img/img2.jpg" />
+          <img src="img/img3.jpg" /> <img src="img/img4.jpg" />
+          <img src="img/img5.jpg" /> <img src="img/img6.jpg" />
+          <img src="img/img7.jpg" /> <img class="hidden" src="img/img8.jpg" />
+          <img src="img/img9.jpg" />
+        </div>
+        <h1>HOla mundo</h1>
+      </div>
+    </main>
+  </body>
+</html>
