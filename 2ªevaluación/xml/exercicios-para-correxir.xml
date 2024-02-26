@@ -1,0 +1,142 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+
+<deportistas>
+
+    <deportista>
+
+    <deporte Atletismo />
+
+    <nombre>Jesse Owens</nombre>
+
+    <deportista>
+
+        <deporte Natación />
+
+        <nombre>Mark Spitz</nombre>
+
+    </deportista>
+
+</deportistas> -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<deportitas>
+    <deportista>
+        <deporte nombre="Atletismo" />
+        <nombre> Jesse Owens </nombre>
+    </deportista>
+    <deportista>
+        <deporte nombre="Natacion" />
+        <nombre> Mark Spitz </nombre>
+    </deportista>
+</deportitas>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+
+<pelicula>
+
+    <titulo>Con faldas y a lo loco</titulo>
+
+    <director>Billy Wilder</director>
+
+</pelicula>
+
+<pelicula>
+
+    <director>Leo McCarey</director>
+
+    <titulo>Sopa de ganso</titulo>
+
+</pelicula>
+
+<autor />barto
+</autor> -->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<peliculas>
+    <pelicula>
+        <titulo>Con faldas y a lo loco</titulo>
+        <director>Billy Wilder</director>
+    </pelicula>
+    <pelicula>
+        <director>Leo McCarey</director>
+        <titulo>Sopa de ganso</titulo>
+    </pelicula>
+    <autor> barto </autor>
+</peliculas>
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+
+<texto>
+
+    <Titulo>XML explicado a los niños
+    </titulo>
+
+    <párrafo>El <abreviatura>XML</abreviatura>define cómo crear lenguajes de marcas.</párrafo>
+
+    <párrafo>Las marcas se añaden a un documento de texto
+
+        para añadir información.</párrafo>
+
+    <http:/ />www.example.org
+    </http://>
+
+</texto> -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<texto>
+    <Titulo>XML explicado a los niños
+    </titulo>
+    <párrafo>El <abreviatura>XML</abreviatura>define cómo crear lenguajes de marcas.</párrafo>
+    <párrafo>Las marcas se añaden a un documento de texto
+        para añadir información.</párrafo>
+    <http>www.example.org</http>
+</texto>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+
+<geografia mundial>
+
+  <pais>
+
+    <pais>España</pais>
+
+    <continente>Europa</continente>
+
+    <capital></capital nombre="Madrid">
+
+  </pais>
+
+</geografia mundial> -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia-mundial>
+    <pais>
+        <nombre>España</nombre>
+        <continente>Europa</continente>
+        <capital nombre="Madrid" />
+    </pais>
+</geografia-mundial>
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+
+<programas>
+
+  <programa nombre="Firefox" licencia="GPL" licencia="MPL" />
+
+  <programa nombre="LibreOffice" licencia="LGPL" />
+
+  <programa nombre="Inkscape" licencia=GPL />
+
+</programas> -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<programas>
+    <programa nombre="Firefox" licencia="GPL" licencia="MPL" />
+    <programa nombre="LibreOffice" licencia="LGPL" />
+    <programa nombre="Inkscape" licencia="GPL" />
+</programas>

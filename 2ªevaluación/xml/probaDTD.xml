@@ -1,0 +1,43 @@
+<!DOCTYPE geografia-mundial [ <!-- Declaración del tipo de documento -->
+    <!ELEMENT geografia-mundial (pais)> <!-- Definición del elemento raíz -->
+    <!ELEMENT pais (nombre, continente, capital)> <!-- Definición del elemento "pais" -->
+    <!ELEMENT nombre (#PCDATA)> <!-- Definición del elemento "nombre" como datos de caracteres -->
+    <!ELEMENT continente (#PCDATA)> <!-- Definición del elemento "continente" como datos de caracteres -->
+    <!ELEMENT capital EMPTY> <!-- Definición del elemento "capital" como vacío -->
+    <!ATTLIST capital
+        nombre CDATA ""> <!-- Definición del atributo "nombre" para el elemento "capital"
+        -->
+]>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia-mundial>
+    <pais>
+        <nombre>España</nombre>
+        <continente>Europa</continente>
+        <capital nombre="Madrid" />
+    </pais>
+</geografia-mundial>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<peliculas>
+    <pelicula>
+        <titulo>Con faldas y a lo loco</titulo>
+        <director>Billy Wilder</director>
+    </pelicula>
+    <pelicula>
+        <titulo>Sopa de ganso</titulo>
+        <director>Leo McCarey</director>
+    </pelicula>
+    <autor> barto </autor>
+</peliculas>
+<!DOCTYPE peliculas [
+    <!ELEMENT peliculas (pelicula,pelicula,autor)>
+    <!ELEMENT pelicula (titulo,director)>
+    <!ELEMENT pelicula (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+]>
