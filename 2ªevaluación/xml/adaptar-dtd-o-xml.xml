@@ -1,0 +1,55 @@
+<!-- DTD - Ejercicio 4-1 - Libro
+    <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro [
+  <!ELEMENT libro EMPTY>
+  <!ATTLIST libro autor NMTOKEN #REQUIRED>
+]>
+
+<libro autor="Mario Vargas Llosa" /> -->
+
+<!-- solucion -->
+
+
+DTD - Ejercicio 4-1 - Libro
+    <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro [
+    <!ELEMENT libro EMPTY>
+    <!ATTLIST libro autor NMTOKENS #REQUIRED>
+]>
+
+<libro autor="Mario Vargas Llosa" />
+
+
+<!-- DTD - Ejercicio 4-2 - Inventores
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventores [
+  <!ELEMENT inventores>
+  <!ELEMENT inventor EMPTY>
+  <!ATTLIST inventor invento CDATA #REQUIRED>
+  <!ATTLIST inventor nombre ID #REQUIRED>
+]>
+
+<inventores>
+  <inventor nombre="Robert Adler" invento="Mando a distancia" />
+  <inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+  <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+  <inventor invento="Fuego" />
+</inventores> -->
+
+<!-- SOLUCION -->
+
+DTD - Ejercicio 4-2 - Inventores
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventores [
+    <!ELEMENT inventores>
+    <!ELEMENT inventor EMPTY>
+    <!ATTLIST inventor invento CDATA #REQUIRED>
+    <!ATTLIST inventor nombre ID #REQUIRED>
+]>
+
+<inventores>
+    <inventor nombre="Robert Adler" invento="Mando a distancia" />
+    <inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+    <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+    <inventor invento="Fuego" />
+</inventores>
