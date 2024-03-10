@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="colores.xsd">
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <rgb>#800080</rgb>
+        </codigo>
+    </color>
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <cmyk>#00FF007F</cmyk>
+        </codigo>
+    </color>
+</colores>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensajes [
+    <!ELEMENT mensajes (mensaje)>
+    <!ELEMENT de (#PCDATA)>
+    <!ELEMENT para (#PCDATA)>
+    <!ELEMENT hora (#PCDATA)>
+    <!ELEMENT texto (#PCDATA)>
+    <!ELEMENT strong (#PCDATA)>
+]>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensajes [
+    <!ELEMENT mensajes (mensaje*)>
+    <!ELEMENT mensaje (de, para, hora, texto)>
+    <!ELEMENT de (#PCDATA)>
+    <!ELEMENT para (#PCDATA)>
+    <!ELEMENT hora (#PCDATA)>
+    <!ELEMENT texto ANY>
+    <!ELEMENT strong (#PCDATA)>
+]>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aeropuertos
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="aeropuertos.xsd">
+    <aeropuerto>
+        <nombre>Berlín Schönefeld (SFX)</nombre>
+    </aeropuerto>
+    <aeropuerto>
+        <nombre>Berlín Tempelhof (THF)</nombre>
+        <cerrado />
+    </aeropuerto>
+</aeropuertos>

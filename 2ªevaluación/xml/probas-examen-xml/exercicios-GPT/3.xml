@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog [
+    <!ELEMENT catalog (book+)>
+    <!ELEMENT book (title,author,genre,price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT genre (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ATTLIST book id ID #REQUIRED>
+]>
+<catalog>
+    <book id="b1">
+        <title>El Gran Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <genre>Ficción</genre>
+        <price>15.99</price>
+    </book>
+    <book id="b2">
+        <title>Cien años de soledad</title>
+        <author>Gabriel García Márquez</author>
+        <genre>Ficción</genre>
+        <price>12.50</price>
+    </book>
+    <book id="b3">
+        <title>1984</title>
+        <author>George Orwell</author>
+        <genre>Ciencia ficción</genre>
+        <price>10.99</price>
+    </book>
+</catalog>

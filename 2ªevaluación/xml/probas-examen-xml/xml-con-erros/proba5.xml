@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+    <!ELEMENT futbol (jugador*)>
+    <!ELEMENT jugador EMPTY>
+    <!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+    <!ATTLIST jugador codigo ID #REQUIRED>
+]>
+
+<futbol>
+    <jugador nombre="Alfredo Di Stéfano" codigo="uno" />
+    <jugador nombre="Edson Arantes do Nascimento Pelé" codigo="dos" />
+    <jugador nombre="Diego Armando Maradona" codigo="tre" />
+    <jugador nombre="Johan Cruyff" codigo="cuatro" />
+</futbol>
+
+<!-- 
+Un atributo de tipo ID no puede empezar por un número. El tipo NTOKENS no puede contener comas -->

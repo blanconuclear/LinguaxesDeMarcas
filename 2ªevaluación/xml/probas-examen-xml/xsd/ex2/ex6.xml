@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="paises.xsd">
+    <pais>
+        <nombre>España</nombre>
+        <unionEuropea />
+        <otan />
+    </pais>
+    <pais>
+        <nombre>Noruega</nombre>
+        <otan />
+    </pais>
+    <pais>
+        <nombre>Austria</nombre>
+        <unionEuropea />
+    </pais>
+</paises>

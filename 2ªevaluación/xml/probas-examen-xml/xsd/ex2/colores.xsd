@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="colores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="color" maxOccurs="unbounded"
+                    minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombreSvg" type="xs:string"></xs:element>
+                            <xs:element name="codigo">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="rgb" type="xs:string" minOccurs="0"></xs:element>
+                                        <xs:element name="cmyk" type="xs:string" minOccurs="0"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

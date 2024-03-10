@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cuadros
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="cuadros.xsd" />
+<cuadro titulo="Adán_y_Eva_1" autor="Alberto Durero" />
+<cuadro autor="Lucas Cranach, el viejo" titulo="Adán_y_Eva_2" />
+</cuadros>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="sistemaSolar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cuerpo" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="planeta" type="xs:string" minOccurs="0"></xs:element>
+                            <xs:element name="satelite" type="xs:string" minOccurs="0"></xs:element>
+                            <xs:element name="asteroide" type="xs:string" minOccurs="0"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+<!-- <xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="sistemaSolar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cuerpo"
+                    maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string"name="planeta" minOccurs="0" />
+                            <xs:element type="xs:string" name="satelite" minOccurs="0" />
+                            <xs:element type="xs:string" name="asteroide" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema> -->

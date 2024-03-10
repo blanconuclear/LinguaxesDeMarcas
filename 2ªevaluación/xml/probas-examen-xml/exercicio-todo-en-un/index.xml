@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE familias [
+    <!ELEMENT familias (familia+)>
+    <!ELEMENT familia ((padre | madre), (padre | madre)?, hijo+)>
+    <!ELEMENT padre (nombre, apellido, apellido, (dni?, edad?))>
+    <!ELEMENT madre (nombre, apellido, apellido, (dni?, edad?))>
+    <!ELEMENT hijo (nombre, apellido, apellido, (edad))>
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+
+    <!ATTLIST padre id ID #IMPLIED>
+    <!ATTLIST madre id ID #IMPLIED>
+    <!ATTLIST hijo id ID #IMPLIED>
+]>
+
+
+<familias xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="familia.xsd">
+    <familia>
+        <padre>
+            <nombre>Juan</nombre>
+            <apellido>Pérez</apellido>
+            <apellido>García</apellido>
+            <dni>12345678A</dni>
+            <edad>40</edad>
+        </padre>
+        <madre>
+            <nombre>Maria</nombre>
+            <apellido>González</apellido>
+            <apellido>López</apellido>
+            <dni>87654321B</dni>
+            <edad>38</edad>
+        </madre>
+        <hijo>
+            <nombre>Carlos</nombre>
+            <apellido>Pérez</apellido>
+            <apellido>González</apellido>
+            <edad>10</edad>
+        </hijo>
+        <hijo>
+            <nombre>Sofía</nombre>
+            <apellido>Pérez</apellido>
+            <apellido>González</apellido>
+            <edad>8</edad>
+        </hijo>
+    </familia>
+    <familia>
+        <madre>
+            <nombre>Laura</nombre>
+            <apellido>Gómez</apellido>
+            <apellido>Rodríguez</apellido>
+            <edad>35</edad>
+        </madre>
+        <hijo>
+            <nombre>Pablo</nombre>
+            <apellido>Gómez</apellido>
+            <apellido>Rodríguez</apellido>
+            <edad>7</edad>
+        </hijo>
+    </familia>
+    <familia>
+        <padre>
+            <nombre>David</nombre>
+            <apellido>Fernández</apellido>
+            <apellido>Martínez</apellido>
+            <dni>98765432C</dni>
+            <edad>45</edad>
+        </padre>
+        <hijo>
+            <nombre>Ana</nombre>
+            <apellido>Fernández</apellido>
+            <apellido>Martínez</apellido>
+            <edad>12</edad>
+        </hijo>
+    </familia>
+</familias>

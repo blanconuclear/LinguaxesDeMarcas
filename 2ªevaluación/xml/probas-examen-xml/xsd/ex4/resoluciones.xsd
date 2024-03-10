@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="resoluciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resolucion" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="nombre" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="alto" type="xs:int" use="required"></xs:attribute>
+                        <xs:attribute name="ancho" type="xs:int" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+</xs:schema>

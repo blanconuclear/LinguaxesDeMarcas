@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animales xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance"
+    xsi:noNamespaceSchemaLocation="exercicio5.xsd">
+    <animal>Perro Caniche</animal>
+    <animal>Gato Siamés</animal>
+</animales>

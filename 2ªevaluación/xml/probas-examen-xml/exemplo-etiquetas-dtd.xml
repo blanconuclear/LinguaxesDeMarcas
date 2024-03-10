@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaCompra [
+    <!-- Define la estructura del elemento raíz listaCompra -->
+    <!ELEMENT listaCompra (item*)>
+
+    <!-- Define la estructura del elemento item como vacío -->
+    <!ELEMENT item EMPTY>
+
+    <!-- Define el atributo nombre para el elemento item como requerido -->
+    <!ATTLIST item nombre CDATA #REQUIRED>
+
+    <!-- Define el atributo cantidad para el elemento item como requerido -->
+    <!ATTLIST item cantidad CDATA #REQUIRED>
+]>
+
+<!-- Ejemplo de uso del DTD definido -->
+<listaCompra>
+    <!-- Ejemplo de un item en la lista de compras -->
+    <item nombre="Leche" cantidad="1 litro" />
+    <!-- Otro ejemplo de un item en la lista de compras -->
+    <item nombre="Pan" cantidad="2 barras" />
+</listaCompra>

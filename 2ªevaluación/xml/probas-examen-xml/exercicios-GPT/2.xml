@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tienda [
+    <!ELEMENT tienda (producto+)>
+    <!ELEMENT producto (nombre, marca, precio, descripcion, disponibilidad)>
+    <!ATTLIST producto id CDATA #REQUIRED>
+    <!ATTLIST producto categoria CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT disponibilidad EMPTY>
+    <!ATTLIST disponibilidad stock (true | false) #REQUIRED>
+]>
+
+<tienda>
+    <producto id="1" categoria="Electrónica">
+        <nombre>Smartphone</nombre>
+        <marca>Samsung</marca>
+        <precio>500</precio>
+        <descripcion>Smartphone de gama media con pantalla AMOLED.</descripcion>
+        <disponibilidad stock="true" />
+    </producto>
+    <producto id="2" categoria="Ropa">
+        <nombre>Camisa</nombre>
+        <marca>Zara</marca>
+        <precio>30</precio>
+        <descripcion>Camisa de algodón con cuello clásico.</descripcion>
+        <disponibilidad stock="false" />
+    </producto>
+    <producto id="3" categoria="Hogar">
+        <nombre>Lámpara de pie</nombre>
+        <marca>Ikea</marca>
+        <precio>80</precio>
+        <descripcion>Lámpara moderna para iluminar el salón.</descripcion>
+        <disponibilidad stock="true" />
+    </producto>
+</tienda>

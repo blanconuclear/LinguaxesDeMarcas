@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="reyesEspañoles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="rey">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"></xs:element>
+                            <xs:element name="padre" type="xs:string"></xs:element>
+                            <xs:element name="madre" type="xs:string"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="reina" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"></xs:element>
+                            <xs:element name="padre" type="xs:string"></xs:element>
+                            <xs:element name="madre" type="xs:string"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+
+<!-- <xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="reyesEspañoles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="rey">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type=" xs:string" name="nombre" />
+                            <xs:element type=" xs:string" name="padre" />
+                            <xs:element type=" xs:string" name="madre" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="reina" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type=" xs:string" name="nombre" />
+                            <xs:element type=" xs:string" name="padre" />
+                            <xs:element type=" xs:string" name="madre" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema> -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros [
+    <!ELEMENT libros (libro*)>
+    <!ELEMENT libro (titulo,autor,publicacion,precio)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT publicacion (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST libro categoria CDATA #REQUIRED>
+]>
+
+
+<libros>
+    <libro categoria="Ficción">
+        <titulo>El señor de los anillos</titulo>
+        <autor>J.R.R. Tolkien</autor>
+        <publicacion>1954</publicacion>
+        <precio> 20.00</precio>
+    </libro>
+    <libro categoria="Ciencia ficción">
+        <titulo>Fundación</titulo>
+        <autor>Isaac Asimov</autor>
+        <publicacion>1951</publicacion>
+        <precio> 18.50</precio>
+    </libro>
+    <libro categoria="Fantasía">
+        <titulo>Juego de tronos</titulo>
+        <autor>George R.R. Martin</autor>
+        <publicacion>1996</publicacion>
+        <precio> 22.50</precio>
+    </libro>
+</libros>

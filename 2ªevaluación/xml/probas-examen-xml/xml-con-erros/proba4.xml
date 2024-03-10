@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaCompra [
+    <!ELEMENT listaCompra (item*)>
+    <!ELEMENT item EMPTY>
+    <!ATTLIST item nombre CDATA #REQUIRED>
+    <!ATTLIST item cantidad CDATA #REQUIRED>
+]>
+
+<listaCompra>
+    <item nombre="leche" cantidad="mucha" />
+    <item nombre="pan" cantidad="una barra" />
+</listaCompra>
+
+
+<!-- No existen los elementos <leche> o <pan>. Convertir las etiquetas <leche> y <pan> en etiquetas
+<item>-->
