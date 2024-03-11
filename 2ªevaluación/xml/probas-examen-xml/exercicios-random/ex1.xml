@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE colores [
-    <!ELEMENT colores (color*)>
-    <!ELEMENT color (nombreSvg,codigo)>
-    <!ELEMENT nombreSvg (#PCDATA)>
-    <!ELEMENT codigo (rgb|cmyk)>
-    <!ELEMENT rgb (#PCDATA)>
-    <!ELEMENT cmyk (#PCDATA)>
+<!DOCTYPE actividades [
+    <!ELEMENT actividades (evento)>
+    <!ELEMENT evento (actividad*,otraEtiqueta*)>
+    <!ELEMENT actividad (#PCDATA)>
+    <!ATTLIST actividad fecha CDATA #REQUIRED>
+    <!ATTLIST actividad hora CDATA #REQUIRED>
+    <!ATTLIST actividad lugar CDATA #REQUIRED>
+    <!ELEMENT otraEtiqueta (#PCDATA)>
 ]>
 
-<colores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="colores.xsd">
-    <color>
-        <nombreSvg>Purple</nombreSvg>
-        <codigo>
-            <rgb>#800080</rgb>
-        </codigo>
-    </color>
-    <color>
-        <nombreSvg>Purple</nombreSvg>
-        <codigo>
-            <cmyk>#00FF007F</cmyk>
-        </codigo>
-    </color>
-</colores>
+
+<actividades
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="actividades.xsd">
+    <evento>
+        <actividad fecha="10 de abril de 2024" hora="9:00" lugar="Oficina">
+            Reunión de equipo
+        </actividad>
+        <actividad fecha="12 de abril de 2024" hora="14:00" lugar="Sala de conferencias">
+            Presentación del proyecto
+        </actividad>
+        <otraEtiqueta>Contenido de otra etiqueta</otraEtiqueta>
+    </evento>
+</actividades>
