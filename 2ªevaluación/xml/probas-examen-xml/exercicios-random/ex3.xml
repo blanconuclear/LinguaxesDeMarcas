@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contabilidad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="contabilidad.xsd">
+    <apunte>
+        <ingreso />
+        <fecha>24 de febrero de 2011</fecha>
+        <cantidad moneda="euro">1800,00 €</cantidad>
+        <concepto>Salario</concepto>
+    </apunte>
+    <apunte>
+        <gasto />
+        <fecha>28 de febrero de 2011</fecha>
+        <cantidad>74,25 €</cantidad>
+        <concepto>Recibo luz</concepto>
+    </apunte>
+</contabilidad>

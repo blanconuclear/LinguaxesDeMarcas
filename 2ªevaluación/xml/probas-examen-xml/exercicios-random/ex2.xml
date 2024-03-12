@@ -6,7 +6,7 @@
     <!ATTLIST album fecha CDATA #REQUIRED>
 ]>
 <albumesMortadelo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="albumes.xsd">
+    xsi:noNamespaceSchemaLocation="albumesMortadelo.xsd">
     <album nombre="El sulfato atómico" fecha="1969" />
     <album nombre="La caja de diez cerrojos" fecha="1971" />
     <album nombre="El otro yo del profesor Bacterio" fecha="1973" />

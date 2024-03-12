@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="contabilidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="apunte" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ingreso" minOccurs="0"></xs:element>
+                            <xs:element name="fecha" type="xs:string"></xs:element>
+                            <xs:element name="concepto" type="xs:string"></xs:element>
+                            <xs:element name="gasto" minOccurs="0"></xs:element>
+                            <xs:element name="cantidad">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="moneda" type="xs:string"></xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
