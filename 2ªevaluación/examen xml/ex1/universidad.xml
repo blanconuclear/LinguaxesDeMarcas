@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE universidad [
+    <!ELEMENT universidad (campus+)>
+    <!ATTLIST campus cod CDATA #REQUIRED>
+    <!ELEMENT campus (edificio+)>
+    <!ELEMENT edificio (nombre,departamento-academico,habitacion+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT departamento-academico (#PCDATA)>
+    <!ELEMENT habitacion (#PCDATA)>
+    <!ATTLIST habitacion numero CDATA #REQUIRED>
+    <!ATTLIST habitacion capacidad CDATA #REQUIRED>
+]>
+
+<universidad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="universidad.xsd">
+    <campus cod="USC">
+        <edificio>
+            <nombre>Don Ramón</nombre>
+            <departamento-academico>Filosofía</departamento-academico>
+            <habitacion numero="01" capacidad="10" />
+        </edificio>
+        <edificio>
+            <nombre>Perez Sanchez</nombre>
+            <departamento-academico>Matemáticas</departamento-academico>
+            <habitacion numero="02" capacidad="20" />
+        </edificio>
+    </campus>
+    <campus cod="UDV">
+        <edificio>
+            <nombre>Tijuana</nombre>
+            <departamento-academico>Literatura</departamento-academico>
+            <habitacion numero="03" capacidad="15" />
+        </edificio>
+        <edificio>
+            <nombre>Campestre</nombre>
+            <departamento-academico>Derecho</departamento-academico>
+            <habitacion numero="04" capacidad="8" />
+        </edificio>
+    </campus>
+</universidad>

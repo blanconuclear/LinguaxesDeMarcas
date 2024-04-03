@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE producto [
+    <!ELEMENT producto EMPTY>
+    <!ATTLIST pelota cod ID #REQUIRED>
+]>
+
+
+<!--   Escribe un DTD que crea un atributo  cod para el elemento producto. 
+Este cod debe ser único en el documento -->
