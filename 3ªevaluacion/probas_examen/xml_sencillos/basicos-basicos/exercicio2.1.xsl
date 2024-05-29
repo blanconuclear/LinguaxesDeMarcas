@@ -7,17 +7,13 @@
     
     <xsl:template match="/" mode="#all">
         <html>
+            <h1><xsl:value-of select="ies/@nome"/></h1>
             <xsl:apply-templates select="//ciclo"/>
         </html>
     </xsl:template>
-    <xsl:template match="//ciclo" mode="#default">
-        <table border="1">
-            <tr>
-                <td><xsl:value-of select="nombre"/></td>
-            </tr>
-            
-        </table>
-        
+    
+    <xsl:template match="ciclo" >
+        <p><xsl:value-of select=""/></p>
     </xsl:template>
     
 </xsl:stylesheet>
