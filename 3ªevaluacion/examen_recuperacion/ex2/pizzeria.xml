@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="file.xsl" type="text/xsl"?>
+<pizzeria nombre="Pizzeria El Italiano">
+    <horarios>
+        <apertura>13:00:00</apertura>
+        <cierre>23:59:00</cierre>
+    </horarios>
+    <direccion>
+        <calle>San Blas </calle>
+        <ciudad>Santiago</ciudad>
+    </direccion>
+    <telefono>+981232345</telefono>
+    <pizzas>
+         <pizza>
+            <nombre>Barbacoa</nombre>
+            <precio>10</precio>
+            <oregano>si</oregano>
+            <ingredientes>
+                <ingrediente>Salsa barbacoa</ingrediente>
+                <ingrediente>Mozzarella</ingrediente>
+                <ingrediente>Pollo</ingrediente>
+                <ingrediente>Bacon</ingrediente>
+                <ingrediente>Ternera</ingrediente>
+            </ingredientes>
+        </pizza>
+
+        <pizza>
+            <nombre>Margarita</nombre>
+            <precio>8</precio>
+            <calorias>500</calorias>
+            <ingredientes>
+                <ingrediente>Tomate</ingrediente>
+                <ingrediente>Jamon</ingrediente>
+                <ingrediente>Queso</ingrediente>
+            </ingredientes>
+        </pizza>
+       
+        <pizza>
+            <nombre>Tres quesos</nombre>
+            <precio>10</precio>
+             <oregano>si</oregano>
+            <ingredientes>
+                <ingrediente>Cabrales</ingrediente>
+                <ingrediente>Mozzarella</ingrediente>
+                <ingrediente>Manchego</ingrediente>
+                <ingrediente>Jamón</ingrediente>
+                <ingrediente>Bacon</ingrediente>
+            </ingredientes>
+        </pizza>
+    </pizzas>
+</pizzeria>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="file.xsl" type="text/xsl"?>
+<music>
+    <album>
+        <title>Abbey Road</title>
+        <artist>The Beatles</artist>
+        <year>1969</year>
+        <genre>Rock</genre>
+        <tracks>
+            <track>
+                <title>Come Together</title>
+                <length>4:20</length>
+            </track>
+            <track>
+                <title>Something</title>
+                <length>3:03</length>
+            </track>
+        </tracks>
+    </album>
+    <album>
+        <title>Thriller</title>
+        <artist>Michael Jackson</artist>
+        <year>1982</year>
+        <genre>Pop</genre>
+        <tracks>
+            <track>
+                <title>Thriller</title>
+                <length>5:57</length>
+            </track>
+            <track>
+                <title>Beat It</title>
+                <length>4:18</length>
+            </track>
+        </tracks>
+    </album>
+    <album>
+        <title>Some Girl</title>
+        <artist>Rolling Stone</artist>
+        <year>1978</year>
+        <genre>Rock</genre>
+        <tracks>
+            <track>
+                <title>Miss You</title>
+                <length>4:49</length>
+            </track>
+            <track>
+                <title>When the whip comes down...</title>
+                <length>4:21</length>
+            </track>
+        </tracks>
+    </album>
+</music>
